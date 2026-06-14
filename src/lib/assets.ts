@@ -1,17 +1,28 @@
-export const photos = {
-    building: "/src/assets/image.png",
-    twinBeds: "/src/assets/image-2.png",
-    washroom: "/src/assets/image-3.png",
-    dining: "/src/assets/image-4.png",
-    doors: "/src/assets/image-5.png",
-    branding: "/src/assets/reception.png",
-    wardrobe: "/src/assets/image-7.png",
-    doubleBed: "/src/assets/image-8.png",
-    twinWhite: "/src/assets/image-9.png",
-    logo: "/src/assets/logo.png",
-  };
+import building from '../assets/image.png'
+import logo from '../assets/logo.png'
+import twinBeds from '../assets/image-2.png'
+import washroom from '../assets/image-3.png'
+import dining from '../assets/image-4.png'
+import doors from '../assets/image-5.png'
+import wardrobe from '../assets/image-7.png'
+import doubleBed from '../assets/image-8.png'
+import twinWhite from '../assets/image-9.png'
+import reception from '../assets/reception.png'
 
-export const logo = photos.logo;
+export const photos = {
+  building,
+  logo,
+  twinBeds,
+  washroom,
+  dining,
+  doors,
+  wardrobe,
+  doubleBed,
+  twinWhite,
+  reception,
+};
+
+export { logo };
 
 export const SITE = {
   title: "Sri Vishnu Grand Men's Hostel - PG & Hostel in Gachibowli, Hyderabad",
