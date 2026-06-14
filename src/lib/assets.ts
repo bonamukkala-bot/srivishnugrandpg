@@ -37,7 +37,7 @@ export const CONTACT = {
   phoneDisplay: "+91 95737 26643",
   phoneDisplay2: "+91 95730 36643",
   whatsapp: "https://wa.me/919573726643",
-  address: "1-57/142/A, Rajiv Nagar Colony, Gachibowli, Hyderabad - 500032",
-  mapsQuery: "https://share.google/7IYQatTz5QPKXMDBa",
-  mapsEmbed: "https://www.google.com/maps?q=1-57/142/A,+Rajiv+Nagar+Colony,+Gachibowli,+Hyderabad+-+500032&output=embed",
+  address: "SRI VISHNU GRAND PG, HOSTEL & GUEST HOUSE, Rajiv Nagar Colony Rd, P Janardhan Reddy Nagar, Gachibowli, Hyderabad, Telangana 500032",
+  mapsQuery: "https://www.google.com/maps/search/?api=1&query=SRI+VISHNU+GRAND+PG+HOSTEL+GUEST+HOUSE+Rajiv+Nagar+Colony+Rd+P+Janardhan+Reddy+Nagar+Gachibowli+Hyderabad+Telangana+500032",
+  mapsEmbed: "https://www.google.com/maps?q=SRI+VISHNU+GRAND+PG+HOSTEL+%26+GUEST+HOUSE,+Rajiv+Nagar+Colony+Rd,+P+Janardhan+Reddy+Nagar,+Gachibowli,+Hyderabad,+Telangana+500032&output=embed",
 };

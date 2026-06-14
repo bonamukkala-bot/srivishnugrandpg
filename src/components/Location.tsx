@@ -53,14 +53,23 @@ export function Location() {
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
             />            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#0a1a3a]/60 via-transparent to-[#D4AF37]/10" />
-            <div className="absolute bottom-5 left-5 right-5 glass-dark rounded-2xl p-5 flex items-start gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#D4AF37] flex items-center justify-center shrink-0 animate-gold-pulse">
+            <a
+              href={CONTACT.mapsQuery}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-5 left-5 right-5 glass-dark rounded-2xl p-5 flex items-start gap-3 hover:border-[#D4AF37]/50 border border-transparent transition-all duration-300 group"
+            >
+              <div className="w-10 h-10 rounded-full bg-[#D4AF37] flex items-center justify-center shrink-0 animate-gold-pulse group-hover:scale-105 transition-transform">
                 <MapPin className="w-5 h-5 text-[#0a1a3a]" />
               </div>
-              <div>
-                <div className="text-white font-display text-lg">Sri Vishnu Grand</div>
-                <div className="text-white/65 text-sm">{CONTACT.address}</div>              </div>
-            </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-white font-display text-lg flex items-center justify-between gap-2">
+                  <span>Sri Vishnu Grand</span>
+                  <span className="text-[#D4AF37] text-xs font-semibold tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Open in Maps →</span>
+                </div>
+                <div className="text-white/65 text-xs md:text-sm line-clamp-2 md:line-clamp-none">{CONTACT.address}</div>
+              </div>
+            </a>
           </motion.div>
 
           {/* Distances */}

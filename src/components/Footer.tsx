@@ -24,13 +24,13 @@ export function Footer() {
               <div className="text-white font-display text-lg">{CONTACT.phoneDisplay}</div>
             </div>
           </motion.a>
-          <motion.a variants={fadeInUp} href={CONTACT.mapsQuery} target="_blank" rel="noreferrer" className="flex items-center gap-4 group">
+          <motion.a variants={fadeInUp} href={CONTACT.mapsQuery} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
             <div className="w-12 h-12 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 flex items-center justify-center group-hover:bg-[#D4AF37]/30 transition-colors">
               <MapPin className="w-5 h-5 text-[#D4AF37]" />
             </div>
             <div>
               <div className="text-white/55 text-xs uppercase tracking-widest">Visit</div>
-              <div className="text-white text-sm">Rajiv Nagar Colony Rd, Gachibowli 500032</div>
+              <div className="text-white text-sm line-clamp-2">{CONTACT.address}</div>
             </div>
           </motion.a>
           <motion.a
