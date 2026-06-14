@@ -13,4 +13,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.webp'],
+  build: {
+    assetsInlineLimit: 0,
+  }
 })

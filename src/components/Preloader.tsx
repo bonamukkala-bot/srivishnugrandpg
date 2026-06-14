@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { logo } from "@/lib/assets";
+import { assets } from "@/lib/assets";
 
 const SESSION_KEY = "hasVisited";
 const DISPLAY_MS = 1400;
@@ -32,7 +32,7 @@ export function Preloader() {
           className="fixed inset-0 z-[100] flex items-center justify-center bg-[#050e23]"
         >
           <motion.img
-            src={logo}
+            src={assets.logo}
             alt="Sri Vishnu Grand Men's Hostel"
             initial={{ opacity: 0, scale: 0.82 }}
             animate={{ opacity: 1, scale: 1 }}

@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { CONTACT, logo } from "@/lib/assets";
+import { CONTACT, assets } from "@/lib/assets";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -89,7 +89,7 @@ export function Navbar() {
           className="flex items-center gap-3 group"
         >
           <img
-            src={logo}
+            src={assets.logo}
             alt="Sri Vishnu Grand Men's Hostel"
             className="h-10 w-10 rounded-full object-cover drop-shadow-[0_0_12px_rgba(245,197,66,0.4)]"
           />

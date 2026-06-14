@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MapPin, MessageCircle, Mail } from "lucide-react";
-import { CONTACT, logo } from "@/lib/assets";
+import { CONTACT, assets } from "@/lib/assets";
 import { staggerParent, fadeInUp } from "@/lib/motion";
 export function Footer() {
   return (
@@ -47,7 +47,7 @@ export function Footer() {
         <div className="mt-16 grid md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Sri Vishnu Grand Men's Hostel" className="h-10 w-10 rounded-full object-cover" />
+              <img src={assets.logo} alt="Sri Vishnu Grand Men's Hostel" className="h-10 w-10 rounded-full object-cover" />
               <div className="font-display text-lg text-gold-gradient">Sri Vishnu Grand</div>
             </div>
             <p className="text-white/55 text-sm leading-relaxed">Exclusive Men's Hostel · PG · Guest House. An elite residence for IT professionals, executives & serious students in Gachibowli.</p>
