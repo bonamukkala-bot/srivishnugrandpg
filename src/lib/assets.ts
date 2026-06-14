@@ -1,35 +1,24 @@
-import building from '../assets/image.png'
-import logo from '../assets/logo.png'
-import twinBeds from '../assets/image-2.png'
-import washroom from '../assets/image-3.png'
-import dining from '../assets/image-4.png'
-import doors from '../assets/image-5.png'
-import wardrobe from '../assets/image-7.png'
-import doubleBed from '../assets/image-8.png'
-import twinWhite from '../assets/image-9.png'
-import reception from '../assets/reception.png'
-
-export const photos = {
-  building,
-  logo,
-  twinBeds,
-  washroom,
-  dining,
-  doors,
-  wardrobe,
-  doubleBed,
-  twinWhite,
-  reception,
+export const assets = {
+  building: '/images/image.png',
+  twinBeds: '/images/image-2.png',
+  washroom: '/images/image-3.png',
+  dining: '/images/image-4.png',
+  doors: '/images/image-5.png',
+  wardrobe: '/images/image-7.png',
+  doubleBed: '/images/image-8.png',
+  twinWhite: '/images/image-9.png',
+  logo: '/images/logo.png',
+  branding: '/images/reception.png',
 };
 
-export { logo };
+export const logo = assets.logo;
 
 export const SITE = {
   title: "Sri Vishnu Grand Men's Hostel - PG & Hostel in Gachibowli, Hyderabad",
   description:
     "Exclusive men's hostel, PG & guest house in Gachibowli, Hyderabad. Single, double & triple sharing rooms with AC, meals, Wi-Fi, 24×7 CCTV. Near Raidurg Metro, Microsoft & ISB.",
   url: "https://srivishnugrand.hostel.in",
-  ogImage: photos.building,
+  ogImage: assets.building,
 } as const;
 
 export const CONTACT = {

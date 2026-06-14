@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { photos } from "@/lib/assets";
+import { assets } from "@/lib/assets";
 import { staggerParent, fadeInUp, scaleIn } from "@/lib/motion";
 import {
   Dialog,
@@ -12,15 +12,15 @@ import TiltCard from "@/components/ui/TiltCard";
 import BlurImage from "@/components/ui/BlurImage";
 
 const galleryItems = [
-  { src: photos.building, label: "Property Exterior" },
-  { src: photos.doubleBed, label: "Double Sharing" },
-  { src: photos.twinWhite, label: "Twin Sharing" },
-  { src: photos.twinBeds, label: "Shared Suite" },
-  { src: photos.dining, label: "Dining Hall" },
-  { src: photos.washroom, label: "Washroom" },
-  { src: photos.wardrobe, label: "Wardrobe & Locker" },
-  { src: photos.doors, label: "Room Entrance" },
-  { src: photos.reception, label: "Lobby Branding" },
+  { src: assets.building, label: "Property Exterior" },
+  { src: assets.doubleBed, label: "Double Sharing" },
+  { src: assets.twinWhite, label: "Twin Sharing" },
+  { src: assets.twinBeds, label: "Shared Suite" },
+  { src: assets.dining, label: "Dining Hall" },
+  { src: assets.washroom, label: "Washroom" },
+  { src: assets.wardrobe, label: "Wardrobe & Locker" },
+  { src: assets.doors, label: "Room Entrance" },
+  { src: assets.branding, label: "Lobby Branding" },
 ] as const;
 
 export function Gallery() {

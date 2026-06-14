@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, MapPin, Star } from "lucide-react";
-import { photos, CONTACT } from "@/lib/assets";
+import { assets, CONTACT } from "@/lib/assets";
 import { staggerParent, fadeInUp, wordStagger, wordFadeUp } from "@/lib/motion";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -18,8 +18,8 @@ export function Hero() {
   const bgY = useTransform(scrollY, [0, 600], [0, 150]); // parallax scroll
 
   useEffect(() => {
-    if (!photos.building) {
-      console.warn("Hero background image import path (photos.building) is broken or undefined!");
+    if (!assets.building) {
+      console.warn("Hero background image import path (assets.building) is broken or undefined!");
     }
   }, []);
 
@@ -29,7 +29,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0 bg-[#050e23] overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: bgY }}>
           <motion.img
-            src={photos.building}
+            src={assets.building}
             alt="Sri Vishnu Grand building"
             className="w-full h-full object-cover cinematic"
             initial={{ scale: 1 }}
@@ -41,7 +41,7 @@ export function Hero() {
               repeatType: "reverse",
             }}
             onError={() => {
-              console.warn("Hero background image failed to load or path is broken:", photos.building);
+              console.warn("Hero background image failed to load or path is broken:", assets.building);
             }}
           />
         </motion.div>

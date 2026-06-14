@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, ShieldCheck, Utensils, Wifi, Cctv, Droplets, Lock } from "lucide-react";
-import { photos, CONTACT } from "@/lib/assets";
+import { assets, CONTACT } from "@/lib/assets";
 import { staggerParent, fadeInUp, scaleIn } from "@/lib/motion";
 import {
   Table,
@@ -38,7 +38,7 @@ const rooms = [
   {
     title: "2-Sharing Suite",
     tag: "Most Private",
-    img: photos.doubleBed,
+    img: assets.doubleBed,
     features: [
       "Twin premium beds",
       "Personal wardrobe & locker",
@@ -49,7 +49,7 @@ const rooms = [
   {
     title: "3-Sharing Suite",
     tag: "Most Popular",
-    img: photos.twinWhite,
+    img: assets.twinWhite,
     features: [
       "Three private bed zones",
       "Curtained privacy",
@@ -60,7 +60,7 @@ const rooms = [
   {
     title: "4-Sharing Suite",
     tag: "Best Value",
-    img: photos.twinBeds,
+    img: assets.twinBeds,
     features: [
       "Spacious shared room",
       "Individual study lights",
@@ -248,7 +248,7 @@ export function Rooms() {
             className="group relative md:col-span-4 aspect-[16/9] md:aspect-auto md:min-h-[380px] rounded-2xl overflow-hidden glass hover:shadow-[0_30px_70px_-25px_rgba(212,175,55,0.35)] transition-all duration-500"
           >
             <BlurImage
-              src={photos.dining}
+              src={assets.dining}
               alt="Royal marble dining hall"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover cinematic group-hover:scale-110 transition-transform duration-700 ease-out"
@@ -274,7 +274,7 @@ export function Rooms() {
             className="group relative md:col-span-2 aspect-[4/3] md:aspect-auto md:min-h-[380px] rounded-2xl overflow-hidden glass hover:shadow-[0_30px_70px_-25px_rgba(212,175,55,0.35)] transition-all duration-500"
           >
             <BlurImage
-              src={photos.wardrobe}
+              src={assets.wardrobe}
               alt="Personal wardrobes & lockers"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover cinematic group-hover:scale-110 transition-transform duration-700 ease-out"
@@ -316,7 +316,7 @@ export function Rooms() {
             className="group relative md:col-span-3 aspect-[16/10] md:aspect-auto md:min-h-[220px] rounded-2xl overflow-hidden glass hover:shadow-[0_30px_70px_-25px_rgba(212,175,55,0.35)] transition-all duration-500"
           >
             <BlurImage
-              src={photos.building}
+              src={assets.building}
               alt="Sri Vishnu Grand property"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover cinematic group-hover:scale-110 transition-transform duration-700 ease-out"
