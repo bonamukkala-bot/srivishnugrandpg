@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Vishnu Grand Men's Hostel - PG & Hostel in Gachibowli, Hyderabad</title>
+    <meta
+      name="description"
+      content="Exclusive men's hostel, PG & guest house in Gachibowli, Hyderabad. Single, double & triple sharing rooms with AC, meals, Wi-Fi, 24×7 CCTV. Near Raidurg Metro, Microsoft & ISB."
+    />
+    <meta property="og:title" content="Sri Vishnu Grand Men's Hostel - PG & Hostel in Gachibowli, Hyderabad" />
+    <meta
+      property="og:description"
+      content="An elite residence for IT professionals, executives & serious students. Premium sharing suites in the heart of Gachibowli, Hyderabad."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://srivishnugrand.hostel.in" />
+    <meta property="og:image" content="/src/assets/image.png" />
+    <!-- PWA Manifest & Icons -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#050e23" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+
+    <!-- Google Analytics (GA4) -->
+    <!-- To activate, replace the 'G-XXXXXXXXXX' placeholders below with your Google Analytics Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- PWA Service Worker & Install Handler -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('ServiceWorker registered:', reg.scope))
+            .catch(err => console.error('ServiceWorker registration failed:', err));
+        });
+      }
+
+      // Store installation event for later use
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        console.log("SVG Hostel PWA is ready for installation.");
+        
+        // Expose global function to trigger PWA install dialog
+        window.triggerPwaInstall = function() {
+          if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+              if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the PWA install prompt');
+              } else {
+                console.log('User dismissed the PWA install prompt');
+              }
+              deferredPrompt = null;
+            });
+          }
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
