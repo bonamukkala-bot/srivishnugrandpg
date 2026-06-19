@@ -9,6 +9,10 @@ export function FAQSchema() {
         "about": {
             "@id": "https://srivishnugrandpg.vercel.app/#business",
         },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".faq-answer", ".faq-question"]
+        },
         "mainEntity": faqs.map((item) => ({
             "@type": "Question",
             "name": item.q,
