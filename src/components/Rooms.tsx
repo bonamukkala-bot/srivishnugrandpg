@@ -52,7 +52,6 @@ const rooms = [
     img: assets.twinWhite,
     features: [
       "Three private bed zones",
-      "Curtained privacy",
       "Daily housekeeping",
       "High-speed Wi-Fi",
     ],
@@ -63,7 +62,6 @@ const rooms = [
     img: assets.twinBeds,
     features: [
       "Spacious shared room",
-      "Individual study lights",
       "Locker for every resident",
       "All meals included",
     ],

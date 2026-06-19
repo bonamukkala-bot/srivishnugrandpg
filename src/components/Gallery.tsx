@@ -20,7 +20,6 @@ const galleryItems = [
   { src: assets.washroom, label: "Washroom" },
   { src: assets.wardrobe, label: "Wardrobe & Locker" },
   { src: assets.doors, label: "Room Entrance" },
-  { src: assets.branding, label: "Lobby Branding" },
 ] as const;
 
 export function Gallery() {
