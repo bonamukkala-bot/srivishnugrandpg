@@ -12,7 +12,7 @@
   <meta property="og:description"
     content="An elite residence for IT professionals, executives & serious students. Premium sharing suites in the heart of Gachibowli, Hyderabad." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://srivishnugrand.hostel.in" />
+  <meta property="og:url" content="https://srivishnugrandpg.com" />
   <meta property="og:image" content="./src/assets/image.png" />
   <!-- PWA Manifest & Icons -->
   <link rel="manifest" href="/manifest.json" />
@@ -38,14 +38,12 @@
       });
     }
 
-    // Store installation event for later use
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault();
       deferredPrompt = e;
       console.log("SVG Hostel PWA is ready for installation.");
 
-      // Expose global function to trigger PWA install dialog
       window.triggerPwaInstall = function () {
         if (deferredPrompt) {
           deferredPrompt.prompt();
@@ -69,10 +67,10 @@
   "@graph": [
     {
       "@type": "LodgingBusiness",
-      "@id": "https://srivishnugrandpg.vercel.app/#business",
+      "@id": "https://srivishnugrandpg.com/#business",
       "name": "Sri Vishnu Grand Men's PG Hostel",
       "description": "Affordable men's PG accommodation in Gachibowli, Hyderabad. Homely food, furnished rooms, 24hr security. Near Raidurg Metro, Microsoft and ISB.",
-      "url": "https://srivishnugrandpg.vercel.app",
+      "url": "https://srivishnugrandpg.com",
       "telephone": "+91-95737-26643",
       "address": {
         "@type": "PostalAddress",

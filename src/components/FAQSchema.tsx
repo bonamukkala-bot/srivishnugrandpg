@@ -5,9 +5,9 @@ export function FAQSchema() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": "https://srivishnugrandpg.vercel.app/#faq",
+        "@id": "https://srivishnugrandpg.com/#faq",
         "about": {
-            "@id": "https://srivishnugrandpg.vercel.app/#business",
+            "@id": "https://srivishnugrandpg.com/#business",
         },
         "speakable": {
             "@type": "SpeakableSpecification",

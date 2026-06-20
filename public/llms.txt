@@ -8,7 +8,7 @@
 - Type: Men's PG / Hostel / Guest House
 - Location: Rajiv Nagar Colony Rd, P Janardhan Reddy Nagar, Gachibowli, Hyderabad, Telangana 500032, India
 - Phone: +91-95737-26643
-- Website: https://srivishnugrandpg.vercel.app
+- Website: https://srivishnugrandpg.com
 - Rating: 4.3 out of 5 (26 Google reviews)
 - Nearby landmarks: Raidurg Metro Station, Microsoft Hyderabad, ISB Hyderabad
 
@@ -55,4 +55,4 @@ Yes. 24x7 CCTV surveillance, personal lockers, and controlled entry ensure belon
 ## Contact
 
 Phone: +91-95737-26643
-Website: https://srivishnugrandpg.vercel.app
+Website: https://srivishnugrandpg.com
